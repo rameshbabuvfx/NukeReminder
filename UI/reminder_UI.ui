@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>189</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="verticalSpacing">
+       <number>20</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QComboBox" name="ReminderModeCombo">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nirmala UI</family>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="3">
+       <widget class="QLabel" name="TimerLable">
+        <property name="minimumSize">
+         <size>
+          <width>128</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>LCDMono2</family>
+          <pointsize>41</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(176, 176, 176);</string>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="text">
+         <string>00:00:00</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="StopReminderButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nirmala UI</family>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	
+	background-color: qlineargradient(spread:pad, x1:0.461285, y1:0, x2:0.479, y2:0.971682, stop:0 rgba(101, 101, 101, 255), stop:1 rgba(47, 47, 47, 255));
+	border-radius:6px;
+}
+
+QPushButton:pressed{
+	
+	background-color: qlineargradient(spread:pad, x1:0.442, y1:1, x2:0.439, y2:0.0285002, stop:0 rgba(101, 101, 101, 255), stop:1 rgba(47, 47, 47, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>STOP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTimeEdit" name="TimeSetEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nirmala UI</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentSection">
+         <enum>QDateTimeEdit::HourSection</enum>
+        </property>
+        <property name="displayFormat">
+         <string>hh:mm:ss </string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="3">
+       <widget class="QProgressBar" name="ReminderprogressBar">
+        <property name="maximumSize">
+         <size>
+          <width>10000</width>
+          <height>4</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QProgressBar{
+	border-radius:3px;
+}
+QProgressBar:chunk{
+	border-radius:2px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(159, 80, 210, 255), stop:1 rgba(88, 197, 191, 255));
+}</string>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="textVisible">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="StartReminderButton">
+        <property name="minimumSize">
+         <size>
+          <width>115</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nirmala UI</family>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	
+	background-color: qlineargradient(spread:pad, x1:0.461285, y1:0, x2:0.479, y2:0.971682, stop:0 rgba(101, 101, 101, 255), stop:1 rgba(47, 47, 47, 255));
+	border-radius:6px;
+}
+
+QPushButton:pressed{
+	
+	background-color: qlineargradient(spread:pad, x1:0.442, y1:1, x2:0.439, y2:0.0285002, stop:0 rgba(101, 101, 101, 255), stop:1 rgba(47, 47, 47, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>START</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="CloseReminderButton">
+        <property name="maximumSize">
+         <size>
+          <width>14</width>
+          <height>14</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius:7px;
+}
+QPushButton:pressed{
+	background-color: rgb(88, 88, 88);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QStackedWidget" name="ReminderstackedWidget">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>176</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="MessagePage">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTextEdit" name="RemindertextEdit">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>176</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+	
+	font: 8pt &quot;Comic Sans MS&quot;;
+	border-style:solid;	
+	border-width:2px;
+	border-radius:10px;
+	border-top-color: rgb(158, 82, 210);
+	border-left-color: rgb(158, 82, 210);
+	border-bottom-color: rgb(89, 196, 191);
+	border-right-color: rgb(89, 195, 191);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Add Message Here.....</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="StartRenderPage">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QListWidget" name="StartRenderNodeListWidget">
+            <property name="styleSheet">
+             <string notr="true">QListWidget{
+	
+	font: 8pt &quot;Comic Sans MS&quot;;
+	border-style:solid;	
+	border-width:2px;
+	border-radius:10px;
+	border-top-color: rgb(158, 82, 210);
+	border-left-color: rgb(158, 82, 210);
+	border-bottom-color: rgb(89, 196, 191);
+	border-right-color: rgb(89, 195, 191);
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

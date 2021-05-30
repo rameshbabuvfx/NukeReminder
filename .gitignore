@@ -1,0 +1,4 @@
+.idea
+.SpaceRoot/
+*.pyc
+__pycache__/
