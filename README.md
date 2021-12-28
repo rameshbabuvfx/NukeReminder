@@ -1,7 +1,7 @@
 ![Nuke_Reminder](https://user-images.githubusercontent.com/73053972/120096509-87cc0400-c149-11eb-877b-f303ff61a26d.png)
 
 # NukeReminder
-Nuke Reminder is a reminder app fit inside nuke. it helps artist to remind their future tasks or more.
+Nuke Reminder is a reminder app fit inside nuke. it helps artist to remind their future tasks and more.
 1. Nuke reminder can give reminders at particluar time.
 2. User can set Schedule renders, user can start renders at a particular given time.
 3. Exit nuke at the given time by the user.
